@@ -1,0 +1,128 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.posts-container {
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #e0e0e0;
+}
+
+.search-bar button {
+  background: #444;
+  color: #e0e0e0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: #555;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.post-card {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+.post-card h3 {
+  color: #f39c12;
+  margin-bottom: 1rem;
+}
+
+.post-card p {
+  color: #e0e0e0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination-button {
+  padding: 0.75rem 1.5rem;
+  background: #f39c12;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination-button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background: #ff6347;
+}
+
+.ellipsis {
+  background: none;
+  color: #e0e0e0;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.arrow {
+  background: #555;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover:not(:disabled) {
+  background: #777;
+}
